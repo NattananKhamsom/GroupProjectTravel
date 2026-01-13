@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="brand"></div>
+        <h2>Welcome</h2>
+        <p>Please enter your details for sign up.</p>
+
+        <div class="social-login">
+            <a href="#" class="social-btn apple">
+                <i class="fa-brands fa-apple" style="color: black;"></i>
+            </a>
+            <a href="#" class="social-btn google">
+                <i class="fa-brands fa-google" style="color: black;"></i>
+            </a>
+            <a href="#" class="social-btn facebook">
+                <i class="fa-brands fa-facebook" style="color: black;"></i>
+            </a>
+        </div>
+
+        <div class="or-divider">
+            <hr> <span>or</span>
+            <hr>
+        </div>
+
+        <form action="./login.html" method="get">
+            <label for="email">E-mail Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" >
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" >
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="********" >
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="********">
+
+            <button type="submit">Sign in</button>
+        </form>
+
+
+        <p class="signup-text">Already have account? <a href="./login.html">Sign in</a></p>
+    </div>
+
+    
+</body>
+
+</html>

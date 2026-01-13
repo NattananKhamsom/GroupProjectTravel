@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    box-sizing: border-box;
+}
+
+/*Breadcrumb*/
+ .breadcrumb-container {
+    padding: 10px 20px;
+    margin: 10px 120px;
+    position: relative;
+    z-index: 10;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb li {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.breadcrumb li::after {
+    content: "/";
+    margin-left: 10px;
+    color: #01082b;
+}
+
+.breadcrumb li:last-child::after {
+    content: "";
+}
+
+.breadcrumb li:last-child {
+    color: #000;
+}
+
+
+.banner {
+    height: 120vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* Swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 11 !important;
+}
+
+.swiper-slide {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Content */
+.content {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 66px 140px;
+    
+}
+
+.content>* {
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title h1 {
+    margin-top: -40px;
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    animation: slideRight .7s cubic-bezier(.52,.19,.3,1.46);
+}
+
+#sub-title p,h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    animation: slideRight .7s;
+}
+
+
+.rating {
+    margin: 50px 0;
+    font-size: 12px;
+}
+
+.rating span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+.rating .fa-solid {
+    color: yellow;
+}
+
+.rating #star5{
+    color: white;
+}
+
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    text-align: justify;
+}
+
+#desc p {
+    font-size: 10px;
+    max-width: 300px;
+    line-height: 1.3;
+    margin: 10px 0;
+    animation: slideLeft .6s;
+}
+
+
+
+.thumbsSwiper{
+    box-sizing: border-box;
+    padding: 10px 0;
+    max-width: 90%;
+    overflow-y: unset !important;
+}
+.thumbsSwiper .swiper-slide{
+    width: 25%;
+    height: 100%;
+    opacity: 1;
+    cursor: pointer;
+    padding: 0 10px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.thumbsSwiper .swiper-slide{
+    border-radius: 15px;
+    transition: transform .7s;
+}
+.thumbsSwiper .swiper-slide img{
+    border-radius: 15px;
+}
+.thumbsSwiper .swiper-slide:hover{
+    transform: translateY(-26%);
+}
+/* Add animation for thumbs */
+.thumbs .swiper-wrapper .swiper-slide:nth-child(1){
+    animation: slideLeft .5s ease-in-out;
+}
+.thumbs .swiper-wrapper .swiper-slide:nth-child(2){
+    animation: slideLeft 1.5s ease-in-out;
+    animation-delay: -0.7s;
+}
+
+/* Overlay */
+.overlay{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000f7;
+    z-index: 1000000;
+    animation: grow .7s;
+}
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay i{
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: .7;
+    transition: all .5s ease-in-out;
+}
+.overlay i:hover{
+    color: var(--primary);
+    rotate: 180deg;
+    scale: 1.4;
+    opacity: 1;
+}
+
+
+
+
+
+/*Animations*/
+@keyframes grow{
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(300%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-130px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideUp{
+    0%{
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes banner{
+    0%{
+        transform: skew(30deg, 40deg) scale(55);
+    }
+}

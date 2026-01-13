@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="america.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav Continent">
+            <div class="nav__data">
+                <a href="./index.html" class="logo">VoyageVoices</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line burger"></i>
+                    <i class="ri-close-large-line close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Continent <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./asia.html" class="dropdown__link">Asia<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./asia.html" class="dropdown__sublink">Thailand</a></li>
+                                    <li><a href="#" class="dropdown__sublink">China</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./europe.html" class="dropdown__link">Europe<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./europe.html" class="dropdown__sublink">France</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Italy</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Germany</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./america.html" class="dropdown__link">America<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./america.html" class="dropdown__sublink">America</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Brazil</a></li>
+                                    <li><a href="#" class="dropdown__sublink">New York City</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./grid.html" class="nav__link">Gallery</a></li>
+                    <li><a href="./blag.html" class="nav__link">Blog</a></li>
+                    <li><a href="./about.html" class="nav__link">About</a></li>
+                    <li class="dropdown__item" style="margin-right: 50px;">
+                        <div class="nav__link">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./profile.html" class="dropdown__link">Profile
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./edit.html" class="dropdown__link">Edit Profile
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="banner">
+        <!-- Add swiper -->
+        <div class="swiper bannerSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./image/เทพีเส.jpg" alt="Statue of Liberty">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/บราซิล.jpg" alt="Brazil">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/times.webp" alt="Macau">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#continent">Continent</a></li>
+            <li>America</li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <div class="content">
+        <div class="title">
+            <div id="title">
+                <h1>America</h1>
+            </div>
+            <div id="sub-title">
+                <p>Statue of Liberty</p>
+            </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star" id="star5"></i>
+                <!--<span>2017</span>
+                <span>2h 9m</span>
+                <span>4 ภาษา</span>
+                <span>PG</span>-->
+            </div>
+
+
+            <div class="desc" style="margin-top: 10rem;">
+
+                <div id="desc">
+                    <p>
+                        Statue of Liberty
+
+                        Made in Paris by the French sculptor Bartholdi, in collaboration with Gustave Eiffel (who was
+                        responsible for the steel framework), this towering monument to liberty was a gift from France
+                        on the centenary of American independence. Inaugurated in 1886, the sculpture stands at the
+                        entrance to New York Harbour and has welcomed millions of immigrants to the United States ever
+                        since
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="font-size:20px;"></i>
+                        New York, NY 10004 United States
+                    </p>
+                    <p>
+                        <i class="fa fa-phone" style="font-size:20px;"></i>
+                        +1 212-363-3200
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumbs">
+        <div thumbsslider="" class="swiper thumbsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="margin: 60px;">
+                    <img src="./image/เทพีเส.jpg" alt="Wat Arunratchawararam" title="Wat Arunratchawararam">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/บราซิล.jpg" alt="Macau" title="Macau">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/times.webp" alt="Macau" title="Macau">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-section">
+                <h2>Contact</h2>
+                <ul>
+
+                    <li><i class="fa-solid fa-phone"></i>092-907-9720</li>
+                    <li><i class="fa-solid fa-phone"></i> 095-291-6757</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nattanan.kh@kumail.com</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nichakan.kh@kumail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> 4730 Crystal Springs Dr, Los Angeles, CA 90027</li>
+                </ul>
+            </div>
+            <div class="links-section">
+                <h2>Quick links</h2>
+                <ul>
+                    <li class="fott"><a href="#">Continent</a></li>
+                    <li class="fott"><a href="#">Gallery</a></li>
+                    <li class="fott"><a href="./blag.html">Blog</a></li>
+                    <li class="fott"><a href="./about.html">About</a></li>
+                    <li class="fott"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Voyage Voices. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="america.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="header.js" defer></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

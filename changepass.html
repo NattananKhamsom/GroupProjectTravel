@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changepassword</title>
+    <link rel="stylesheet" href="Changepass.css">
+    <style>
+        #back {
+            float: left;
+            margin-left: 1em;
+            font-size: xx-large;
+            text-decoration: none;
+            color: black;
+        }
+
+        #text {
+            margin-bottom: 0.75em;
+            margin-right: 0.42em;
+        }
+
+        hr {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .Reset-text a {
+            text-decoration: none;
+            color: black;
+            border: 1px solid #0E59ED;
+            border-radius: 5px;
+            background-color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .Reset-text a:hover {
+            text-decoration: none;
+            color: white;
+            border: 2px solid transparent;
+            background-color: #0E59ED;
+            background: linear-gradient(90deg, #759CEB, #0E59ED);
+            transform: translateY(-3px) rotate(1deg);
+           
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            
+            transition: all 0.4s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <a href="./profile.html" id="back">&#8592;</a>
+
+        <div style="margin-top: 4em;">
+            <h2>Reset Password</h2>
+            <p id="text">Your new password must be different to previous password </p>
+            <hr>
+            <br><br>
+            <div class="part">
+                <p>Enter new password</p>
+                <input type="password" placeholder=" New password"> <br><br><br>
+                <p>Confirmed new password</p>
+                <input type="password" placeholder=" password must same"><br>
+            </div>
+        </div>
+
+
+        <br><br>
+
+
+        <p class="Reset-text" style="text-align: right; margin-right: 5.6em;"><a href="./edit.html">Reset password</a></p>
+    </div>
+
+
+</body>
+
+</html>

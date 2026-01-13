@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="blog2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+        <nav class="nav Continent">
+            <div class="nav__data">
+                <a href="./index.html" class="logo">VoyageVoices</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line burger"></i>
+                    <i class="ri-close-large-line close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Continent <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./asia.html" class="dropdown__link">Asia<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./asia.html" class="dropdown__sublink">Thailand</a></li>
+                                    <li><a href="#" class="dropdown__sublink">China</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./europe.html" class="dropdown__link">Europe<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./europe.html" class="dropdown__sublink">France</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Italy</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Germany</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./america.html" class="dropdown__link">America<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./america.html" class="dropdown__sublink">America</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Brazil</a></li>
+                                    <li><a href="#" class="dropdown__sublink">New York City</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./grid.html" class="nav__link">Gallery</a></li>
+                    <li><a href="./blag.html" class="nav__link">Blog</a></li>
+                    <li><a href="./about.html" class="nav__link">About</a></li>
+                    <li class="dropdown__item" style="margin-right: 50px;">
+                        <div class="nav__link">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./profile.html" class="dropdown__link">Profile
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./edit.html" class="dropdown__link">Edit Profile
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br>
+
+
+    <!-- Blog Page Content -->
+    <div class="container blog-header">
+        <h1>Blog</h1>
+
+        <div class="row">
+            <!-- Main Blog Posts -->
+            <div class="col-lg-8">
+                <!-- Blog Post -->
+                <div class="card blog-card">
+                    <img src="./image/Cafe.jpg" class="card-img-top" alt="Cafeสวยในป่าเขียวขจี">
+                    <div class="card-body">
+                        <h5 class="card-title">A Taste like never before. 🍲🍇</h5>
+                        <p class="card-text">
+                            <small class="text-muted">January 18, 2023</small><br>
+                            THE 10 BEST Cafes in New York City (Updated 2023)
+                        </p>
+                        <ul>
+                            <li>A Cafe</li>
+                            <li>B Cafe</li>
+                            <li>C Coffeehouse</li>
+                            <li>D Coffee</li>
+                            <li>...and more</li>
+                        </ul>
+                        <p>Do you love cafes? Then explore them, my friend.</p>
+                        <div class="btn-group" role="group" aria-label="Blog post actions">
+                            <button class="btn btn-outline-primary btn-sm">👍 6</button>
+                            <button class="btn btn-outline-primary btn-sm">💬 3</button>
+                            <button class="btn btn-outline-primary btn-sm">🔗 Share</button>
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn btn-outline-info btn-sm">Bookmark</button>
+                            <button class="btn btn-outline-info btn-sm">Cafe</button>
+                            <button class="btn btn-outline-info btn-sm">Chill</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comment Section -->
+                <div class="comment-section">
+                    <h5>3 Comments</h5>
+
+                    <!-- Comment 1 -->
+                    <div class="d-flex comment">
+                        <img src="./image/rat.jpg" alt="User Rat" width="50px" height="50px"
+                            style="border-radius: 120px;">
+                        <div class="ms-3 comment-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>IamRAT</strong> <small class="text-muted">January 9, 2023</small>
+                            </div>
+                            <p>Hi bro I am Rat 😎 your post very interesting I will go to Newyork and travel there next
+                                year.</p>
+                            <div class="comment-options">
+                                <button class="btn btn-outline-primary btn-sm">👍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment 2 -->
+                    <div class="d-flex comment">
+                        <img src="./image/gun.jpg" alt="User Nickshan" width="50px" height="50px"
+                            style="border-radius: 120px;">
+                        <div class="ms-3 comment-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>Nickshan</strong> <small class="text-muted">January 9, 2023</small>
+                            </div>
+                            <p>Can't wait to see you bro! @IamRAT</p>
+                            <div class="comment-options">
+                                <button class="btn btn-outline-primary btn-sm">👍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comment 3 -->
+                    <div class="d-flex comment">
+                        <img src="./image/roblox.png" alt="User Doctorism" width="50px" height="50px"
+                            style="border-radius: 120px;">
+                        <div class="ms-3 comment-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <strong>Doctorism</strong> <small class="text-muted">January 9, 2023</small>
+                            </div>
+                            <p>That fire 🔥🔥🔥🔥🔥🔥🔥</p>
+                            <div class="comment-options">
+                                <button class="btn btn-outline-primary btn-sm">👍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add a Comment -->
+                    <div class="d-flex mt-3">
+                        <input type="text" class="form-control" placeholder="Add a comment">
+                        <button class="btn btn-primary ms-2">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Search Bar -->
+                <div class="mb-4">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recent Posts</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#">20 Most Beautiful Places in New York City That You Must Visit</a><br>
+                                <small class="text-muted">January 28, 2023</small>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#">Top Luxury Rooftop Hotels in New York</a><br>
+                                <small class="text-muted">January 28, 2023</small>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#">Top Things to do in Bali This Year</a><br>
+                                <small class="text-muted">January 18, 2023</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tags -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tags</h5>
+                        <div class="tags">
+                            <a href="#">America</a>
+                            <a href="#">Europe</a>
+                            <a href="#">Asia</a>
+                            <a href="#">USA</a>
+                            <a href="#">England</a>
+                            <a href="#">Thailand</a>
+                            <a href="#">Brazil</a>
+                            <a href="#">Italy</a>
+                            <a href="#">Japan</a>
+                            <a href="#">Festival</a>
+                            <a href="#">Autumn</a>
+                            <a href="#">Relax</a>
+                            <a href="#">Halloween</a>
+                            <a href="#">New Year</a>
+                            <a href="#">Christmas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-section">
+                <h2>Contact</h2>
+                <ul>
+
+                    <li><i class="fa-solid fa-phone"></i>092-907-9720</li>
+                    <li><i class="fa-solid fa-phone"></i> 095-291-6757</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nattanan.kh@kumail.com</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nichakan.kh@kumail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> 4730 Crystal Springs Dr, Los Angeles, CA 90027</li>
+                </ul>
+            </div>
+            <div class="links-section">
+                <h2>Quick links</h2>
+                <ul>
+                    <li class="fott"><a href="#">Continent</a></li>
+                    <li class="fott"><a href="#">Gallery</a></li>
+                    <li class="fott"><a href="./blag.html">Blog</a></li>
+                    <li class="fott"><a href="./about.html">About</a></li>
+                    <li class="fott"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Voyage Voices. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="header.js" defer></script>
+</body>
+
+</html>

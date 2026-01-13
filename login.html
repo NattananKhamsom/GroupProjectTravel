@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .forgotpass:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="brand"></div>
+        <h2>Welcome back</h2>
+        <p>Please enter your details for sign in.</p>
+
+        <div class="social-login">
+            <a href="#" class="social-btn apple">
+                <i class="fa-brands fa-apple" style="color: black;"></i>
+            </a>
+            <a href="#" class="social-btn google">
+                <i class="fa-brands fa-google" style="color: black;"></i>
+            </a>
+            <a href="#" class="social-btn facebook">
+                <i class="fa-brands fa-facebook" style="color: black;"></i>
+            </a>
+        </div>
+
+        <div class="or-divider">
+            <hr> <span>or</span>
+            <hr>
+        </div>
+
+        <form>
+            <label for="email">E-mail Address</label>
+            <input type="email" id="email" placeholder="Enter your email" >
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" >
+
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox"> Remember
+                </label>
+                <a href="./forgotpass.html" class="forgot-password" id="forgotpass">Forgot password?</a>
+            </div>
+
+            <p class="button"><a href="./profile.html" style="text-decoration: none; color: white;">Sign in</a></p>
+        </form>
+
+        <p class="signup-text">don't have an account yet? <a href="./register.html">Sign Up</a></p>
+    </div>
+</body>
+
+</html>

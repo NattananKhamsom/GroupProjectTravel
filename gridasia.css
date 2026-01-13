@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    box-sizing: border-box;
+}
+
+.breadcrumb-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0 25px;
+}
+
+.breadcrumb li a:hover {
+    color: #f4b400;
+}
+
+.breadcrumb li::after {
+    content: "|";
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+/* ลบสัญลักษณ์ "|" หลังลิงก์สุดท้าย (America) */
+.breadcrumb li:last-child::after {
+    content: "";
+    /* ไม่แสดงอะไรหลังลิงก์สุดท้าย */
+}
+
+
+.gallery > * {
+    position: relative; /* เพื่อให้ใช้ z-index ได้ */
+    z-index: 1; /* ทำให้เนื้อหาปรากฏอยู่ข้างหน้า */
+}
+
+/* Gallery Section */
+.gallery {
+    position: relative; /* สร้างตำแหน่งให้กับ Gallery */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* เพื่อไม่ให้มีการ overflow */
+}
+
+.gallery::before {
+    content: ''; /* สร้างเนื้อหาว่าง */
+    position: absolute; /* ตั้งตำแหน่งให้เบลอ */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(./image/pasis.jpg); /* ระบุภาพพื้นหลัง */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px); /* ปรับความเบลอ */
+    z-index: 0; /* วางไว้ข้างหลังเนื้อหา */
+}
+
+
+
+.image-grid {
+    position: relative; /* ตั้งตำแหน่งให้ Grid Image */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
+    z-index: 1; /* ทำให้อยู่ด้านหน้า */
+    margin-left: -500px;
+}
+
+
+.image-item {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item img:hover {
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 1); /* Inner white border */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Modal สำหรับแสดงรูปภาพเมื่อคลิก */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal for displaying clicked images */
+.modal img {
+    width: 40%;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.modal.open {
+    display: flex;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-grid {
+        margin: 0 40px;
+        grid-template-columns: repeat(1, 1fr);
+        /* Adjust for tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+        /* Adjust for mobile */
+    }
+
+    .hamburg {
+        display: block;
+        /* Show the hamburger icon on mobile */
+    }
+
+    .links {
+        display: none;
+        /* Hide links initially */
+    }
+
+    .dropdown-menu {
+        display: none;
+        /* Hide dropdown by default */
+    }
+
+    .dropdown-menu.open {
+        display: block;
+        /* Show dropdown when open */
+    }
+}

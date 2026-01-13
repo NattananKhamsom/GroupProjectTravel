@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    box-sizing: border-box;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./image/about1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 280px;
+}
+.heading h1, p{
+   color: white;
+}
+h1{
+    margin-top: 30px;
+}
+.great {
+    background: linear-gradient(to bottom, #034E65, white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 100px 0;
+    height: 180vh;
+}
+
+.great img:first-child {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+    margin-left: 106px;
+}
+
+.great img:nth-child(2) {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 80vh;
+    left: 360px;
+    z-index: 1;
+}
+
+/* Align the whole .great-1 section to the right */
+.great-1 {
+    width: 430px;
+    height: 403px;
+    margin-left: auto; /* Aligns the entire section to the right */
+    margin-right: 150px; /* Optional: Adds some space from the right edge */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.great .great-1 h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: inline-flex; /* ใช้ inline-flex เพื่อไม่ให้มีผลกระทบกับ layout อื่น */
+    align-items: center; /* จัดเรียงรูปภาพกับข้อความให้อยู่ตรงกลางแนวตั้ง */
+    text-indent: 50px;
+}
+
+.great .great-1 span {
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างรูปภาพกับข้อความ */
+    
+}
+
+.great .great-1 img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle; /* ทำให้รูปอยู่ในแนวเดียวกับข้อความ */
+    right: 87vh;
+    top: 20vh;
+}
+
+
+
+.great-1 p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.great-1 ul {
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.great-1 ul li {
+    list-style-type: none; /* ซ่อนเครื่องหมาย bullet ปกติ */
+    position: relative; /* ใช้สำหรับจัดตำแหน่งไอคอน */
+}
+
+.great-1 ul li::before {
+    content: '✔'; /* ใส่เครื่องหมายถูก */
+    color: rgb(0, 0, 0); /* สีของเครื่องหมายถูก */
+    font-size: 1.2rem; /* ขนาดของเครื่องหมายถูก */
+    position: absolute;
+    left: -25px; /* ตำแหน่งของเครื่องหมายถูกทางซ้าย */
+    top: 0;
+}
+
+
+.great-1 ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+
+
+
+/*Footer*/
+.footer {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-left: 350px;
+    padding: 50px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.footer_col h2 {
+    margin-bottom: 2rem;
+}
+
+.footer_col p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+.footer_col p:hover {
+    color: rgb(0, 183, 255);
+}
+.footer_col ul li{
+    margin: 10px;
+}
+.footer_col ul li a{
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer_col ul li a:hover{
+    color: rgb(0, 183, 255);
+}
+
+.footer_col h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.footer_bar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav Continent">
+            <div class="nav__data">
+                <a href="./index.html" class="logo">VoyageVoices</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line burger"></i>
+                    <i class="ri-close-large-line close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Continent <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./asia.html" class="dropdown__link">Asia<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./asia.html" class="dropdown__sublink">Thailand</a></li>
+                                    <li><a href="#" class="dropdown__sublink">China</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./europe.html" class="dropdown__link">Europe<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./europe.html" class="dropdown__sublink">France</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Italy</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Germany</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./america.html" class="dropdown__link">America<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./america.html" class="dropdown__sublink">America</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Brazil</a></li>
+                                    <li><a href="#" class="dropdown__sublink">New York City</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./grid.html" class="nav__link">Gallery</a></li>
+                    <li><a href="./blag.html" class="nav__link">Blog</a></li>
+                    <li><a href="./about.html" class="nav__link">About</a></li>
+                    <li class="dropdown__item" style="margin-right: 50px;">
+                        <div class="nav__link">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./profile.html" class="dropdown__link">Profile
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./edit.html" class="dropdown__link">Edit Profile
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="home" id="home">
+        <p data-aos="fade-right" data-aos-duration="1200" data-aos-deley="600">Find your special place</p>
+        <h1 data-aos="fade-left" data-aos-duration="1200" data-aos-deley="800">WITH COOL TRAVEL</h1>
+        <br><br>
+    </section>
+
+
+    <section class="continent" id="continent">
+        <div class="heading">
+            <h1 data-aos="fade-up" data-aos-duration="1200">Continent</h1>
+        </div>
+        <div class="sub-heading" data-aos="flip-up" data-aos-duration="1200" data-aos-deley="200">
+            <p>Ready to explore the world? Choose your next adventure from our selection of continents: Europe’s rich
+                culture and history, Asia’s stunning landscapes and traditions, or America’s mix of natural beauty and
+                modern cities. Start your journey now!</p><br><br>
+        </div>
+        <div class="place">
+            <div class="card card1" data-aos="fade-right" data-aos-duration="1200" data-aos-deley="400">
+                <a href="./asia.html"><img src="./image/เอเชีย2.jpg" alt="Asia" title="Asia"></a>
+                <div class="main-card">
+                    <h1>Asia</h1>
+                </div>
+            </div>
+            <div class="card card2" data-aos="fade-up" data-aos-duration="1200" data-aos-deley="600">
+                <a href="./europe.html"><img src="./image/ยุโรป.jpg" alt="Europe" title="Europe"></a>
+                <div class="main-card">
+                    <h1>Europe</h1>
+                </div>
+            </div>
+            <div class="card card2" data-aos="fade-left" data-aos-duration="1200" data-aos-deley="800">
+                <a href="./america.html"><img src="./image/เทพีเสรีภาพ.webp" alt="America" title="America"></a>
+                <div class="main-card">
+                    <h1>America</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="heading">
+            <h1 data-aos="fade-up" data-aos-duration="1200">Gallery</h1>
+        </div>
+        <div class="section_container gallery_container">
+            <div class="image_gallery">
+                <div class="gallery_col">
+                    <img src="./image/เอเชีย1.jpg" alt="Ulun Danu Beratan Temple" title="Ulun Danu Beratan Temple"
+                        data-aos="zoom-in-right" data-aos-duration="1200" data-aos-deley="200">
+                </div>
+                <div class="gallery_col">
+                    <img src="./image/เอเชีย2.jpg" alt="Chureito Pagoda" title="Chureito Pagoda" data-aos="zoom-in-down"
+                        data-aos-duration="1200" data-aos-deley="400">
+                    <img src="./image/เอเชีย3.jpg" alt="Merlion" title="Merlion" data-aos="zoom-in-up"
+                        data-aos-duration="1200" data-aos-deley="600">
+                </div>
+                <div class="gallery_col">
+                    <img src="./image/Indian.jpg" alt="Taj Mahal" title="Taj Mahal" data-aos="zoom-in-left"
+                        data-aos-duration="1200" data-aos-deley="800">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-section">
+                <h2>Contact</h2>
+                <ul>
+
+                    <li><i class="fa-solid fa-phone"></i>092-907-9720</li>
+                    <li><i class="fa-solid fa-phone"></i> 095-291-6757</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nattanan.kh@kumail.com</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nichakan.kh@kumail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> 4730 Crystal Springs Dr, Los Angeles, CA 90027</li>
+                </ul>
+            </div>
+            <div class="links-section">
+                <h2>Quick links</h2>
+                <ul>
+                    <li class="fott"><a href="#">Continent</a></li>
+                    <li class="fott"><a href="#">Gallery</a></li>
+                    <li class="fott"><a href="./blag.html">Blog</a></li>
+                    <li class="fott"><a href="./about.html">About</a></li>
+                    <li class="fott"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Voyage Voices. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="header.js" defer></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

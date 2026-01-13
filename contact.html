@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav Continent">
+            <div class="nav__data">
+                <a href="./index.html" class="logo">VoyageVoices</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line burger"></i>
+                    <i class="ri-close-large-line close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            Continent <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./asia.html" class="dropdown__link">Asia<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./asia.html" class="dropdown__sublink">Thailand</a></li>
+                                    <li><a href="#" class="dropdown__sublink">China</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./europe.html" class="dropdown__link">Europe<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./europe.html" class="dropdown__sublink">France</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Italy</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Germany</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./america.html" class="dropdown__link">America<i
+                                        class="ri-add-line dropdown__add"></i></a>
+                                <ul class="dropdown__submenu">
+                                    <li><a href="./america.html" class="dropdown__sublink">America</a></li>
+                                    <li><a href="#" class="dropdown__sublink">Brazil</a></li>
+                                    <li><a href="#" class="dropdown__sublink">New York City</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./grid.html" class="nav__link">Gallery</a></li>
+                    <li><a href="./blag.html" class="nav__link">Blog</a></li>
+                    <li><a href="./about.html" class="nav__link">About</a></li>
+                    <li class="dropdown__item" style="margin-right: 50px;">
+                        <div class="nav__link">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <ul class="dropdown__menu">
+                            <li class="dropdown__subitem">
+                                <a href="./profile.html" class="dropdown__link">Profile
+                                </a>
+                            </li>
+                            <li class="dropdown__subitem">
+                                <a href="./edit.html" class="dropdown__link">Edit Profile
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="Contact">
+        <h1>Contact</h1>
+        <p id="let">Let`s keep in touch!</p>
+    </div>
+
+
+    <div class="info" style="padding-top: 15em; margin-bottom: 4em;">
+        <div class="person1">
+                <img src="./image/front.jpg" alt="สมาชิกผู้หญิง">
+                <p style="font-weight: bold; ">นางสาวณิชากานต์ คนกลาง</p>
+                <p class="Consert" style="font-weight: bolder;">Contact</p>
+                <p><i class="fa-solid fa-phone"></i> 095-291-6757</p>
+                <p><i class="fa-regular fa-envelope"></i>Nichakan.kh@kkumail.com</p>
+
+        </div>
+
+
+        <div class="person2">
+            
+                <img src="./image/512512.jpg" alt="สมาชิกผู้ชาย">
+                <p style="font-weight: bold;">นายณัฐนันท์ ขำสม</p>
+                <p class="Consert" style="font-weight: bolder;">Contact</p>
+                <p><i class="fa-solid fa-phone"></i>092-907-9720</p>
+                <p><i class="fa-regular fa-envelope"></i>Nattanan.kh@kkumail.com</p>
+            
+        </div>
+    </div>
+
+
+    <div class="question">
+        <h1>Any Question?</h1>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter your email"> <br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="5" placeholder="Type your message here..."></textarea>
+        <br>
+        <button type="submit"><a href="./about.html" style="color: white;">Submit</a></button>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-section">
+                <h2>Contact</h2>
+                <ul>
+                    
+                    <li><i class="fa-solid fa-phone"></i>092-907-9720</li>
+                    <li><i class="fa-solid fa-phone"></i> 095-291-6757</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nattanan.kh@kumail.com</li>
+                    <li><i class="fa-regular fa-envelope"></i>Nichakan.kh@kumail.com</li>
+                    <li><i class="fa-solid fa-map-pin"></i> 4730 Crystal Springs Dr, Los Angeles, CA 90027</li>
+                </ul>
+            </div>
+            <div class="links-section">
+                <h2>Quick links</h2>
+                <ul>
+                    <li class="fott"><a href="#">Continent</a></li>
+                    <li class="fott"><a href="#">Gallery</a></li>
+                    <li class="fott"><a href="./blag.html">Blog</a></li>
+                    <li class="fott"><a href="./about.html">About</a></li>
+                    <li class="fott"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Voyage Voices. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="header.js" defer></script>
+</body>
+
+</html>

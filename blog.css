@@ -1,0 +1,26 @@
+body {
+    background-color: #B3E5FC;
+}
+
+.blog-header {
+    margin-top: 20px;
+}
+
+.blog-card {
+    margin-bottom: 30px;
+}
+
+.tags a {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.tags a:hover {
+    background-color: #00bcd4;
+    color: #fff;
+}
